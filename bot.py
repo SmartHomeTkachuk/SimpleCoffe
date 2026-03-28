@@ -199,7 +199,7 @@ async def cmd_start(message: Message):
     "🧠 Квиз о кофе\n"
     "📞 Контакты\n\n"
     "👇 *Выберите действие:*"
-))
+)
     await message.answer(welcome_text, parse_mode="Markdown", reply_markup=main_menu_keyboard())
 
 @router.callback_query(F.data == "main_menu")
